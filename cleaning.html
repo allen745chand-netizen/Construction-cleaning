@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleaning | Field &amp; Finish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="inner-page">
+  <header class="site-header"><a class="brand" href="index.html"><span>F&amp;F</span><i></i><em>Field &amp;
+        Finish</em></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="nav"><a href="index.html">Home</a><a href="construction.html">Home improvement</a><a class="active"
+        href="cleaning.html">Cleaning</a><a href="contact.html" class="nav-cta">Get a quote <b>↗</b></a></nav>
+  </header>
+  <main>
+    <section class="page-hero cleaning-hero">
+      <div>
+        <p class="eyebrow light"><span></span> Commercial cleaning</p>
+        <h1>Ready for<br /><i>what's next.</i></h1>
+        <p>Clean, considered spaces for teams, clients, and the workday ahead.</p>
+      </div>
+    </section>
+    <section class="detail-intro">
+      <p class="eyebrow"><span></span> How we help</p>
+      <h2>Clean spaces.<br />Clear <i>minds.</i></h2>
+      <p>Our cleaning teams take care of the daily details, so your people can focus on their work. Flexible plans,
+        consistent quality, and a team you can count on.</p>
+    </section>
+    <section class="offerings">
+      <article><b>01</b>
+        <h3>Worksite<br />cleaning</h3>
+        <p>Post-construction and ongoing cleanup to keep jobsites safe and moving.</p>
+      </article>
+      <article><b>02</b>
+        <h3>Office<br />spaces</h3>
+        <p>Recurring care for workplaces that feel good to walk into.</p>
+      </article>
+      <article><b>03</b>
+        <h3>Deep<br />cleaning</h3>
+        <p>Detailed, one-time service when your space needs a reset.</p>
+      </article>
+    </section>
+    <section class="inquiry" id="inquire">
+      <div class="inquiry-copy">
+        <p class="eyebrow light"><span></span> Get your quote</p>
+        <h2>Let's make<br />space <i>shine.</i></h2>
+        <p>Tell us the kind of space you have and the care it needs. We’ll respond within one business day.</p>
+      </div>
+      <form class="quote-form enhanced-quote-form">
+        <div class="service-tabs" role="tablist"><button type="button" class="selected"
+            data-service="Worksite cleaning">Worksite</button><button type="button"
+            data-service="Office cleaning">Office space</button><button type="button" data-service="Deep cleaning">Deep
+            clean</button></div><input type="hidden" name="service" value="Worksite cleaning" />
+
+        <div class="form-row">
+          <label class="form-group">
+            <input required name="zip" type="text" placeholder="ZIP Code" class="form-input" />
+          </label>
+
+          <div class="form-select-group">
+            <select name="rooms" class="form-select">
+              <option value="1">1 room</option>
+              <option value="2">2 rooms</option>
+              <option value="3">3 rooms</option>
+              <option value="4+">4+ rooms</option>
+            </select>
+            <div class="form-divider"></div>
+            <select name="floors" class="form-select">
+              <option value="1">1 floor</option>
+              <option value="2">2 floors</option>
+              <option value="3">3 floors</option>
+              <option value="4+">4+ floors</option>
+            </select>
+          </div>
+
+          <div class="form-select-group">
+            <input required name="date" type="text" placeholder="Sat Aug 01" class="form-input no-border" />
+            <div class="form-divider"></div>
+            <select name="time" class="form-select">
+              <option value="8:00 AM">8:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="2:00 PM" selected>2:00 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row stretch">
+          <label class="form-group">
+            <input name="phone" type="tel" placeholder="Phone Number (Optional)" class="form-input" />
+          </label>
+
+          <label class="form-group">
+            <input required name="email" type="email" placeholder="Email" class="form-input" />
+          </label>
+
+          <button class="button btn-green" type="submit">Get a Price</button>
+        </div>
+
+
+
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand" href="index.html"><span>F&amp;F</span><i></i><em>Field &amp; Finish</em></a>
+    <p>Home improvement + cleaning for the spaces that matter.</p>
+    <p>© 2026 Field &amp; Finish</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
