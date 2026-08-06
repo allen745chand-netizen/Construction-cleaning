@@ -1151,3 +1151,340 @@ textarea {
     text-decoration: underline;
     font-weight: 500;
 }
+
+/* =========================================
+   Service Highlights, Cross-sell, Trust, Steps, Commercial
+   ========================================= */
+
+.highlight-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin: 0 5.7vw 118px;
+}
+
+.highlight-strip div {
+    padding: 30px 24px;
+    border-right: 1px solid var(--line);
+}
+
+.highlight-strip div:last-child {
+    border-right: 0;
+}
+
+.highlight-strip b {
+    display: block;
+    font: 11px "DM Mono";
+    opacity: 0.55;
+    margin-bottom: 10px;
+}
+
+.highlight-strip span {
+    display: block;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    line-height: 1.25;
+}
+
+.cross-sell {
+    background: var(--cream);
+    margin: 0 5.7vw 118px;
+    padding: 56px 5.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cross-sell .eyebrow {
+    margin-bottom: 16px;
+}
+
+.cross-sell h2 {
+    font-size: clamp(28px, 3.4vw, 42px);
+    line-height: 1.08;
+    letter-spacing: -0.05em;
+    margin: 0 0 12px;
+    font-weight: 600;
+    max-width: 460px;
+}
+
+.cross-sell p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 420px;
+    margin: 0;
+    opacity: 0.85;
+}
+
+.cross-sell .button {
+    flex-shrink: 0;
+}
+
+.trust-badges {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 5.7vw;
+}
+
+.trust-badges div {
+    padding: 32px 24px;
+    border-right: 1px solid var(--line);
+}
+
+.trust-badges div:last-child {
+    border-right: 0;
+}
+
+.trust-badges b {
+    display: block;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.trust-badges span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    opacity: 0.65;
+}
+
+.steps {
+    padding: 90px 5.7vw 118px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.steps article {
+    padding-top: 26px;
+    border-top: 1px solid var(--line);
+}
+
+.steps b {
+    display: block;
+    font: 11px "DM Mono";
+    opacity: 0.5;
+    margin-bottom: 22px;
+}
+
+.steps h3 {
+    font-size: 24px;
+    letter-spacing: -0.04em;
+    margin: 0 0 10px;
+}
+
+.steps p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 260px;
+    opacity: 0.8;
+}
+
+.commercial {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 90px 5.7vw;
+}
+
+.commercial .eyebrow {
+    margin-bottom: 22px;
+}
+
+.commercial h2 {
+    font-size: clamp(32px, 4vw, 52px);
+    letter-spacing: -0.05em;
+    line-height: 1.05;
+    margin: 0 0 20px;
+    max-width: 600px;
+    font-weight: 600;
+}
+
+.commercial>p {
+    font-size: 15px;
+    line-height: 1.65;
+    max-width: 480px;
+    opacity: 0.85;
+    margin: 0 0 44px;
+}
+
+.commercial-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    border-top: 1px solid rgba(244, 242, 235, 0.18);
+    padding-top: 34px;
+}
+
+.commercial-list div b {
+    display: block;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.commercial-list div span {
+    display: block;
+    font-size: 13px;
+    line-height: 1.55;
+    opacity: 0.7;
+}
+
+.commercial .button {
+    margin-top: 44px;
+}
+
+.field-label {
+    font-size: 11px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+}
+
+.moving-hero {
+    background-image: linear-gradient(135deg, var(--ink), #2b3d31 55%, var(--rust));
+}
+
+/* =========================================
+   Contact / QR card page
+   ========================================= */
+
+.card-page {
+    min-height: 100vh;
+    background: var(--ink);
+    color: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.card-wrap {
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-wrap .brand {
+    justify-content: center;
+    color: var(--paper);
+    margin-bottom: 40px;
+}
+
+.card-wrap h1 {
+    font-size: 34px;
+    letter-spacing: -0.04em;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.card-wrap .tag {
+    font-size: 13px;
+    opacity: 0.65;
+    margin: 0 0 40px;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 34px;
+}
+
+.card-actions a {
+    display: block;
+    padding: 16px 20px;
+    background: var(--paper);
+    color: var(--ink);
+    text-decoration: none;
+    font: 600 14px "DM Sans";
+    letter-spacing: -0.01em;
+}
+
+.card-actions a.card-primary {
+    background: var(--rust);
+    color: #fff;
+}
+
+.social-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-row a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(244, 242, 235, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--paper);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+@media (max-width: 720px) {
+    .highlight-strip {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 24px 75px;
+    }
+
+    .highlight-strip div {
+        padding: 20px 16px;
+        border-right: 1px solid var(--line);
+    }
+
+    .highlight-strip div:nth-child(2n) {
+        border-right: 0;
+    }
+
+    .cross-sell {
+        margin: 0 24px 75px;
+        padding: 40px 24px;
+        display: block;
+    }
+
+    .cross-sell .button {
+        margin-top: 26px;
+    }
+
+    .trust-badges {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 24px;
+    }
+
+    .trust-badges div {
+        padding: 22px 16px;
+        border-right: 1px solid var(--line);
+    }
+
+    .trust-badges div:nth-child(2n) {
+        border-right: 0;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        padding: 60px 24px 75px;
+        gap: 30px;
+    }
+
+    .commercial {
+        padding: 60px 24px;
+    }
+
+    .commercial-list {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .card-wrap h1 {
+        font-size: 28px;
+    }
+}

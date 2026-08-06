@@ -11,14 +11,18 @@ if (menu) {
 
 // Quote forms logic
 document.querySelectorAll('.quote-form').forEach((form) => {
-  const hidden = form.querySelector('input[name="service"]');
+  const serviceHidden = form.querySelector('input[name="service"]');
 
-  // Service tab toggling
-  form.querySelectorAll('.service-tabs button').forEach((tab) => {
-    tab.addEventListener('click', () => {
-      form.querySelectorAll('.service-tabs button').forEach((button) => button.classList.remove('selected'));
-      tab.classList.add('selected');
-      if (hidden) hidden.value = tab.dataset.service;
+  // Service / frequency tab toggling — each .service-tabs group updates its own hidden input
+  form.querySelectorAll('.service-tabs').forEach((tabGroup) => {
+    const fieldName = tabGroup.dataset.field || 'service';
+    const hiddenInput = form.querySelector(`input[name="${fieldName}"]`);
+    tabGroup.querySelectorAll('button').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabGroup.querySelectorAll('button').forEach((button) => button.classList.remove('selected'));
+        tab.classList.add('selected');
+        if (hiddenInput) hiddenInput.value = tab.dataset.service;
+      });
     });
   });
 
@@ -34,7 +38,7 @@ document.querySelectorAll('.quote-form').forEach((form) => {
     console.log("New Quote Request Submitted:", dataObj);
 
     // 3. Display confirmation message
-    const serviceName = hidden ? hidden.value.toLowerCase() : 'cleaning';
+    const serviceName = serviceHidden ? serviceHidden.value.toLowerCase() : 'cleaning';
     const msgEl = form.querySelector('.form-message');
     if (msgEl) {
       msgEl.textContent = `Thanks — we received your ${serviceName} inquiry and will be in touch shortly.`;

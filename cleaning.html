@@ -17,7 +17,8 @@
   <header class="site-header"><a class="brand" href="index.html"><span>F&amp;F</span><i></i><em>Field &amp;
         Finish</em></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
     <nav class="nav"><a href="index.html">Home</a><a href="construction.html">Home improvement</a><a class="active"
-        href="cleaning.html">Cleaning</a><a href="contact.html" class="nav-cta">Get a quote <b>↗</b></a></nav>
+        href="cleaning.html">Cleaning</a><a href="moving.html">Moving</a><a href="contact.html" class="nav-cta">Get a
+        quote <b>↗</b></a></nav>
   </header>
   <main>
     <section class="inquiry" id="inquire">
@@ -27,10 +28,17 @@
         <p>Tell us the kind of space you have and the care it needs. We’ll respond within one business day.</p>
       </div>
       <form class="quote-form enhanced-quote-form">
-        <div class="service-tabs" role="tablist"><button type="button" class="selected"
+        <div class="service-tabs" role="tablist" data-field="service"><button type="button" class="selected"
             data-service="Worksite cleaning">Worksite</button><button type="button"
             data-service="Office cleaning">Office space</button><button type="button" data-service="Deep cleaning">Deep
-            clean</button></div><input type="hidden" name="service" value="Worksite cleaning" />
+            clean</button><button type="button" data-service="Commercial contract">Commercial contract</button></div>
+        <input type="hidden" name="service" value="Worksite cleaning" />
+
+        <div class="service-tabs" role="tablist" data-field="frequency"><button type="button" class="selected"
+            data-service="One-time">One-time</button><button type="button" data-service="Weekly">Weekly</button><button
+            type="button" data-service="Bi-weekly">Bi-weekly</button><button type="button"
+            data-service="Monthly">Monthly</button></div>
+        <input type="hidden" name="frequency" value="One-time" />
 
         <div class="form-row">
           <label class="form-group">
@@ -82,6 +90,12 @@
         <p class="form-message" aria-live="polite"></p>
       </form>
     </section>
+    <section class="trust-badges">
+      <div><b>Insured &amp; bonded</b><span>Every job is covered, start to finish.</span></div>
+      <div><b>Background-checked team</b><span>Vetted cleaners you can trust in your space.</span></div>
+      <div><b>Book on your schedule</b><span>No time windows — pick the day and time that works.</span></div>
+      <div><b>Satisfaction guaranteed</b><span>Not happy? We'll make it right.</span></div>
+    </section>
     <section class="page-hero cleaning-hero">
       <div>
         <p class="eyebrow light"><span></span> Commercial cleaning</p>
@@ -94,6 +108,20 @@
       <h2>Clean spaces.<br />Clear <i>minds.</i></h2>
       <p>Our cleaning teams take care of the daily details, so your people can focus on their work. Flexible plans,
         consistent quality, and a team you can count on.</p>
+    </section>
+    <section class="steps">
+      <article><b>01</b>
+        <h3>Tell us about<br />your space</h3>
+        <p>Share your ZIP code, room count, and the type of cleaning you need.</p>
+      </article>
+      <article><b>02</b>
+        <h3>Pick a day<br />&amp; time</h3>
+        <p>No fixed windows — choose the date and time that actually works for you.</p>
+      </article>
+      <article><b>03</b>
+        <h3>We handle<br />the rest</h3>
+        <p>A vetted, background-checked team shows up and gets it done, one-time or recurring.</p>
+      </article>
     </section>
     <section class="offerings">
       <article><b>01</b>
@@ -109,10 +137,24 @@
         <p>Detailed, one-time service when your space needs a reset.</p>
       </article>
     </section>
+    <section class="commercial">
+      <p class="eyebrow light"><span></span> Contract cleaning</p>
+      <h2>Ongoing service<br />for <i>businesses.</i></h2>
+      <p>We take on recurring cleaning contracts for commercial spaces — built around your hours, your standards, and
+        a consistent team who knows your space.</p>
+      <div class="commercial-list">
+        <div><b>Clinics &amp; medical offices</b><span>Sanitation-focused cleaning that fits around patient
+            hours.</span></div>
+        <div><b>Hotels &amp; hospitality</b><span>Reliable turnover and common-area care for guest-ready
+            spaces.</span></div>
+        <div><b>Corporate offices</b><span>Nightly, weekly, or custom-schedule service for your team.</span></div>
+      </div>
+      <a class="button button-light" href="contact.html#inquire">Request a commercial quote <b>↗</b></a>
+    </section>
   </main>
   <footer><a class="brand" href="index.html"><span>F&amp;F</span><i></i><em>Field &amp; Finish</em></a>
-    <p>Home improvement + cleaning for the spaces that matter.</p>
-    <p>© 2026 Field &amp; Finish</p>
+    <p>Home improvement, cleaning &amp; moving for the spaces that matter.</p>
+    <p>© 2026 Field &amp; Finish · <a href="card.html" style="color:inherit">Contact card</a></p>
   </footer>
   <script src="script.js"></script>
 </body>

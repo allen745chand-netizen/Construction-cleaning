@@ -21,6 +21,7 @@
       <a href="index.html">Home</a>
       <a href="construction.html">Home improvement</a>
       <a class="active" href="cleaning.html">Cleaning</a>
+      <a href="moving.html">Moving</a>
       <a href="contact.html" class="nav-cta">Get a quote <b>↗</b></a>
     </nav>
   </header>
@@ -30,14 +31,15 @@
     <section class="contact-header">
       <p class="eyebrow"><span></span> Get in touch</p>
       <h1>Let's talk<br /><i>about your space.</i></h1>
-      <p>Whether you need cleaning or home improvement work, tell us what you're looking for and we'll respond within
-        one business day.</p>
+      <p>Whether you need cleaning, home improvement work, or a move handled, tell us what you're looking for and
+        we'll respond within one business day.</p>
     </section>
 
     <section class="contact-quote" id="inquire">
       <div class="quote-type-tabs" role="tablist">
         <button type="button" class="selected" data-quote="cleaning">Cleaning</button>
         <button type="button" data-quote="construction">Home improvement</button>
+        <button type="button" data-quote="moving">Moving</button>
       </div>
 
       <div class="quote-panel selected" data-panel="cleaning">
@@ -48,11 +50,19 @@
         </div>
 
         <form class="quote-form enhanced-quote-form">
-          <div class="service-tabs" role="tablist"><button type="button" class="selected"
+          <div class="service-tabs" role="tablist" data-field="service"><button type="button" class="selected"
               data-service="Worksite cleaning">Worksite</button><button type="button"
               data-service="Office cleaning">Office space</button><button type="button"
-              data-service="Deep cleaning">Deep clean</button></div><input type="hidden" name="service"
-            value="Worksite cleaning" />
+              data-service="Deep cleaning">Deep clean</button><button type="button"
+              data-service="Commercial contract">Commercial contract</button></div>
+          <input type="hidden" name="service" value="Worksite cleaning" />
+
+          <div class="service-tabs" role="tablist" data-field="frequency"><button type="button" class="selected"
+              data-service="One-time">One-time</button><button type="button"
+              data-service="Weekly">Weekly</button><button type="button"
+              data-service="Bi-weekly">Bi-weekly</button><button type="button" data-service="Monthly">Monthly</button>
+          </div>
+          <input type="hidden" name="frequency" value="One-time" />
 
           <div class="form-row">
             <label class="form-group">
@@ -114,13 +124,38 @@
 
         <form class="quote-form">
           <div class="service-tabs" role="tablist"><button type="button" class="selected"
+              data-service="Framing">Framing</button><button type="button"
+              data-service="Sheetrock and drywall">Sheetrock</button><button type="button"
+              data-service="Taping and mudding">Taping</button><button type="button"
               data-service="Trim and finish carpentry">Trim &amp; carpentry</button><button type="button"
               data-service="Professional painting">Painting</button><button type="button"
               data-service="Final-detail finishing">Final details</button></div><input type="hidden" name="service"
-            value="Trim and finish carpentry" /><label>Your name<input required name="name" type="text"
+            value="Framing" /><label>Your name<input required name="name" type="text"
               placeholder="Jane Smith" /></label><label>Best email<input required name="email" type="email"
               placeholder="jane@email.com" /></label><label>Project details<textarea required name="details"
               placeholder="Tell us about the space and finishing work you need."></textarea></label><button
+            class="button button-accent" type="submit">Send inquiry <b>↗</b></button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="quote-panel" data-panel="moving">
+        <div class="quote-panel-copy">
+          <p class="eyebrow light"><span></span> Request a quote</p>
+          <h2>Tell us what<br />needs <i>moving.</i></h2>
+          <p>Choose a service, share a few details, and we'll be in touch within one business day.</p>
+        </div>
+
+        <form class="quote-form">
+          <div class="service-tabs" role="tablist"><button type="button" class="selected"
+              data-service="Local moving">Local moving</button><button type="button"
+              data-service="Long-distance moving">Long-distance</button><button type="button"
+              data-service="Garbage removal">Garbage removal</button><button type="button"
+              data-service="Delivery">Delivery</button></div><input type="hidden" name="service"
+            value="Local moving" /><label>Your name<input required name="name" type="text"
+              placeholder="Jane Smith" /></label><label>Best email<input required name="email" type="email"
+              placeholder="jane@email.com" /></label><label>Job details<textarea required name="details"
+              placeholder="Tell us the pickup and drop-off locations, dates, and what needs to move."></textarea></label><button
             class="button button-accent" type="submit">Send inquiry <b>↗</b></button>
           <p class="form-message" aria-live="polite"></p>
         </form>
@@ -163,8 +198,8 @@
 
   <footer>
     <a class="brand" href="index.html"><span>F&amp;F</span><i></i><em>Field &amp; Finish</em></a>
-    <p>Home improvement + cleaning for the spaces that matter.</p>
-    <p>© 2026 Field &amp; Finish</p>
+    <p>Home improvement, cleaning &amp; moving for the spaces that matter.</p>
+    <p>© 2026 Field &amp; Finish · <a href="card.html" style="color:inherit">Contact card</a></p>
   </footer>
   <script src="script.js"></script>
 </body>
